@@ -14,10 +14,11 @@ export const HeaderWrapper = styled.div `
 `;
 export const LogoWrapper = styled.div `
   justify-content:center;
-  margin-left:8px;
+  margin-left:16px;
 
 `;
 export const TopRightWrapper = styled.div `
+  margin-right:16px;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -26,7 +27,7 @@ export const LevelWrapper = styled.div `
   width: 43px;
   height: 43px;
   background-color:#95de64;
-  border-radius: 2px;
+  border-radius: 6px;
   font-size: 35px;
   color:white;
   margin-left:8px;

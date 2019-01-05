@@ -19,7 +19,7 @@ class Header extends Component {
             <Wrapper>
                 <HeaderWrapper>
                     <LogoWrapper>
-                        <img src={logo}/>
+                        <img src={logo}  alt="logo"/>
                     </LogoWrapper>
                     <TopRightWrapper>
                         <Avatar src={avatar} size={43}/>
