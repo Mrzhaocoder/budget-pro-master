@@ -12,7 +12,9 @@ class Menu extends Component {
                 </TopMenuWrapper>
 
                 <Link to="/pages/ProjectBudget">
-                    <MenuWrapper className="active">
+                    {/*                     </Link><MenuWrapper className="active">
+ */}
+                    <MenuWrapper >
                         <MenuWrapperLeft >
 
                             <Icon
