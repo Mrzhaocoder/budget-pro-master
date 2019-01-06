@@ -9,8 +9,9 @@ export const Wrapper = styled.div `
   display:inline-block;
 `;
 export const TopWrapper = styled.div `
-  margin:16px 0 0 40px;
+  margin:16px 0 -15px 40px;
   font-size:25px;
+  font-weight:bold;
 `;
 export const CenterWrapper = styled.div `
   margin:0 32px;

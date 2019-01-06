@@ -23,7 +23,8 @@ export const TopMenuWrapper = styled.div `
   display:flex;
   align-items:center;
   justify-content:center; 
-  font-size:31px;
+  font-size:25px;
+  font-weight:bold;
 `;
 export const MenuWrapper = styled.div `
   margin:8px;
