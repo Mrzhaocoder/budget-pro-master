@@ -1,0 +1,45 @@
+{
+  "extends": "eslint-config-airbnb",
+  "globals": {
+    "APP": true,
+    "window": true
+  },
+  "plugins": ["react", "import"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js"]
+      }
+    }
+  },
+  "rules": {
+    "react/prefer-stateless-function": 0,
+    "no-console": 0,
+    "react/no-multi-comp": 0,
+    "react/prop-types": 0,
+    "react/jsx-filename-extension": 0,
+    "import/extensions": 0,
+    "import/no-unresolved": 0,
+    "no-use-before-define": 0,
+    "react/jsx-pascal-case": 0,
+    "import/no-duplicates": 2,
+    "complexity": [2, 95], // 算法复杂度到25
+    "max-depth": [2, 9],
+    "max-len": [2, {
+      "code": 180,
+      "tabWidth": 2,
+      "ignoreUrls": true
+    }],
+    "max-nested-callbacks": [2, 9],
+    "camelcase": 2,
+    "linebreak-style": [0, "error", "windows"], // 允许windows开发环境
+    "no-param-reassign": [2, {
+      "props": false
+    }], // disable the rule specifically for param properties
+    "max-statements": [2, 100] // 每个方法最多100条语句
+  }
+}
