@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { Divider, Icon, Switch } from 'antd';
+import { Divider, Icon, Switch, Progress } from 'antd';
+import { Link } from 'react-router-dom';
 import { Wrapper, TopWrapper, CenterWrapper, BudgetWrapper, CenterWrapperLeft, ProjectBudget } from './style';
+import BudgetExecutionTable from './BudgetExecutionTable/index';
 
 class BudgetExecution extends Component {
   constructor(props) {
@@ -14,7 +16,12 @@ class BudgetExecution extends Component {
     return (
       <Wrapper>
         <TopWrapper>
-          {this.state.id}年度预算执行
+          <div>
+            <Link to={'/pages/ProjectBudget/'}>
+              <Icon type="left-circle" />
+            </Link>
+            {this.state.id}年度预算执行
+          </div>
           <Switch checkedChildren={<Icon type="check" />} unCheckedChildren={<Icon type="close" />} defaultChecked />
         </TopWrapper>
 
@@ -31,12 +38,33 @@ class BudgetExecution extends Component {
                 <div>¥43660</div>
               </ProjectBudget>
             </CenterWrapperLeft>
-            <CenterWrapperLeft>001</CenterWrapperLeft>
-            <CenterWrapperLeft>001</CenterWrapperLeft>
-            <CenterWrapperLeft>001</CenterWrapperLeft>
-            <CenterWrapperLeft>001</CenterWrapperLeft>
-            <CenterWrapperLeft>001</CenterWrapperLeft>
+            <CenterWrapperLeft>
+              <Progress type="circle" percent={75} format={percent => `${percent} %`} />
+            </CenterWrapperLeft>
+            <CenterWrapperLeft>
+              <div>预算支出</div>
+              <div className="red">¥43660</div>
+            </CenterWrapperLeft>
+            <Divider type="vertical" />
+            <CenterWrapperLeft>
+              <div>人力预算执行</div>
+              <div>6000/5464</div>
+            </CenterWrapperLeft>
+            <Divider type="vertical" />
+            <CenterWrapperLeft>
+              <div>项目采购</div>
+              <div>¥ 12458.33</div>
+            </CenterWrapperLeft>
+            <Divider type="vertical" />
+            <CenterWrapperLeft>
+              <div>项目收入</div>
+              <div className="green">¥ 6653.46</div>
+            </CenterWrapperLeft>
+            <Link to={'/pages/ProjectBudget/DepartmentalBudget/$AAAA'}>
+              <Icon type="right" style={{ fontSize: '30px' }} />
+            </Link>
           </BudgetWrapper>
+          <BudgetExecutionTable />
         </CenterWrapper>
       </Wrapper>
     );

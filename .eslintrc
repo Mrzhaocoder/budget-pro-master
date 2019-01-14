@@ -1,5 +1,9 @@
 {
   "extends": "eslint-config-airbnb",
+  "env": {
+    "browser": true,
+    "node": true
+},
   "globals": {
     "APP": true,
     "window": true
