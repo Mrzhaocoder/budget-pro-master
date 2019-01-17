@@ -1,7 +1,7 @@
 import { Table } from 'antd';
-// import axios from 'axios';
 import React, { Component } from 'react';
-import reqwest from 'reqwest';
+// import reqwest from 'reqwest';
+import axios from 'axios';
 
 import { Wrapper } from './style';
 
@@ -53,8 +53,10 @@ class BudgetExecutionTable extends Component {
   fetch = (params = {}) => {
     console.log('params:', params);
     this.setState({ loading: true });
-    reqwest({
-      url: 'https://randomuser.me/api',
+    axios({
+      url: '/api/table.json',
+      /* reqwest({
+      url: 'https://randomuser.me/api', */
       method: 'get',
       data: {
         results: 7,
@@ -62,15 +64,20 @@ class BudgetExecutionTable extends Component {
       },
       type: 'json',
     }).then((data) => {
+      console.log(data);
+
       const pagination = { ...this.state.pagination };
+      console.log(pagination);
+
       // Read total count from server
       // pagination.total = data.totalCount;
-      pagination.total = 100;
+      pagination.total = 31;
       this.setState({
         loading: false,
-        data: data.results,
+        data: data.data.results,
         pagination,
       });
+      console.log(this.state.data);
     });
   };
 

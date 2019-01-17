@@ -33,4 +33,19 @@ export const TopDepartmentalWrapper = styled.div`
   height: 50%;
   width: 100%;
   display: flex;
+  align-items: center;
+`;
+export const TopCenterWrapper = styled.div`
+  width: 100px;
+  height: 100%;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.long {
+    margin-left: 17px;
+    width: 200px;
+    font-size: 10px;
+    color: #bfbfbf;
+  }
 `;

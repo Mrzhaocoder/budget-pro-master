@@ -1,0 +1,253 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": { "title": "miss", "first": "claire", "last": "da costa" },
+      "location": {
+        "street": "6198 rua santo antônio ",
+        "city": "jacareí",
+        "state": "rio grande do norte",
+        "postcode": 22047,
+        "coordinates": { "latitude": "-70.0117", "longitude": "23.9792" },
+        "timezone": {
+          "offset": "-3:00",
+          "description": "Brazil, Buenos Aires, Georgetown"
+        }
+      },
+      "email": "claire.dacosta@example.com",
+      "login": {
+        "uuid": "23459a7b-2b24-4e8f-a9a9-1732b390345a",
+        "username": "organicbutterfly546",
+        "password": "muscle",
+        "salt": "Skt4H9NK",
+        "md5": "17a35eaebbf87e34506eec4f3eb5b50a",
+        "sha1": "ca50570e4c54298cac651f78cf2791017a1dd596",
+        "sha256": "de553ddda490097fc0e9e15f94c13e4a1d9319dde528d4601bc8eb719f894f48"
+      },
+      "dob": { "date": "1955-09-20T09:56:03Z", "age": 63 },
+      "registered": { "date": "2004-12-23T22:34:12Z", "age": 14 },
+      "phone": "(15) 0123-6702",
+      "cell": "(83) 9210-8376",
+      "id": { "name": "", "value": null },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/68.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/68.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/68.jpg"
+      },
+      "nat": "BR"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "miss", "first": "léonie", "last": "roy" },
+      "location": {
+        "street": "8052 rue des cuirassiers",
+        "city": "strasbourg",
+        "state": "moselle",
+        "postcode": 54692,
+        "coordinates": { "latitude": "50.1971", "longitude": "-148.0812" },
+        "timezone": { "offset": "+9:30", "description": "Adelaide, Darwin" }
+      },
+      "email": "léonie.roy@example.com",
+      "login": {
+        "uuid": "4d5f411d-6ba8-4caf-8ecb-db7df3860edf",
+        "username": "silverfrog431",
+        "password": "watford",
+        "salt": "17nFyb52",
+        "md5": "8287f50ad7a1471eb53db67e6dc4218d",
+        "sha1": "67f04403cf2393f092191b7382e7cb9d4829a95d",
+        "sha256": "52cc8048785754cf7358d814e064df2c3d03c9d175545081b0b8ee2dccdc7c17"
+      },
+      "dob": { "date": "1971-07-22T23:01:13Z", "age": 47 },
+      "registered": { "date": "2014-04-27T04:26:15Z", "age": 4 },
+      "phone": "05-78-02-11-46",
+      "cell": "06-26-90-94-24",
+      "id": { "name": "INSEE", "value": "2NNaN30648248 51" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/35.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/35.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/35.jpg"
+      },
+      "nat": "FR"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "mr", "first": "daryl", "last": "duncan" },
+      "location": {
+        "street": "1849 patrick street",
+        "city": "sligo",
+        "state": "tipperary",
+        "postcode": 17510,
+        "coordinates": { "latitude": "49.2417", "longitude": "-66.3825" },
+        "timezone": { "offset": "+9:30", "description": "Adelaide, Darwin" }
+      },
+      "email": "daryl.duncan@example.com",
+      "login": {
+        "uuid": "58b5dbe0-3226-4949-b0e6-465097e46d93",
+        "username": "blackostrich517",
+        "password": "krusty",
+        "salt": "z1bIO1eb",
+        "md5": "275a14cba1bc7a38ef4058bbeb2bf249",
+        "sha1": "aa06747fff9be6f941b5233ade97d915d472804e",
+        "sha256": "0ffec8224d01da62d7b49f55b51b885c6831145efdc7b470bc474f224976b861"
+      },
+      "dob": { "date": "1982-08-26T09:55:18Z", "age": 36 },
+      "registered": { "date": "2015-09-25T03:06:25Z", "age": 3 },
+      "phone": "021-126-6618",
+      "cell": "081-909-3955",
+      "id": { "name": "PPS", "value": "6454255T" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/37.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/37.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/37.jpg"
+      },
+      "nat": "IE"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "mr", "first": "charbel", "last": "vieira" },
+      "location": {
+        "street": "3556 rua vinte e quatro de outubro",
+        "city": "caxias do sul",
+        "state": "maranhão",
+        "postcode": 88953,
+        "coordinates": { "latitude": "22.7881", "longitude": "-18.5483" },
+        "timezone": {
+          "offset": "+10:00",
+          "description": "Eastern Australia, Guam, Vladivostok"
+        }
+      },
+      "email": "charbel.vieira@example.com",
+      "login": {
+        "uuid": "33e2add1-6d08-4ad1-882a-7bd5314aba1c",
+        "username": "organicswan154",
+        "password": "buttercu",
+        "salt": "Hi8zSkDD",
+        "md5": "48cdbd5efe896966125c9ae2bf446317",
+        "sha1": "bb028e73c0cc3c77d2863b2f6846b189a29209bd",
+        "sha256": "370acc1e094e542bea912c4c24033f2fbfccf5f85ee6061f687e152690c20b45"
+      },
+      "dob": { "date": "1990-08-31T09:08:42Z", "age": 28 },
+      "registered": { "date": "2010-03-17T18:32:04Z", "age": 8 },
+      "phone": "(53) 4905-9042",
+      "cell": "(70) 8743-9016",
+      "id": { "name": "", "value": null },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/33.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/33.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/33.jpg"
+      },
+      "nat": "BR"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "mr", "first": "adrian", "last": "tucker" },
+      "location": {
+        "street": "6761 north road",
+        "city": "balbriggan",
+        "state": "laois",
+        "postcode": 50006,
+        "coordinates": { "latitude": "84.8758", "longitude": "-172.2593" },
+        "timezone": { "offset": "-3:30", "description": "Newfoundland" }
+      },
+      "email": "adrian.tucker@example.com",
+      "login": {
+        "uuid": "f4e98b68-7388-4103-bf5f-35e82f6b2773",
+        "username": "beautifulduck671",
+        "password": "wg8e3wjf",
+        "salt": "VN3TbJhu",
+        "md5": "a35d6b0c58d726c274ad35e3a73e26de",
+        "sha1": "dc60d85a6b38d458dc4bfd25be317a282eb3334a",
+        "sha256": "85727541687b7c5291662ded75bd3e3192995b27863bb9e5d920a03c3de8530e"
+      },
+      "dob": { "date": "1960-11-24T10:27:07Z", "age": 58 },
+      "registered": { "date": "2010-06-18T15:17:17Z", "age": 8 },
+      "phone": "071-893-1937",
+      "cell": "081-466-2248",
+      "id": { "name": "PPS", "value": "3560161T" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/19.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/19.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/19.jpg"
+      },
+      "nat": "IE"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "ms", "first": "یاسمن", "last": "موسوی" },
+      "location": {
+        "street": "6624 میدان ولیعصر (عج)",
+        "city": "قرچک",
+        "state": "یزد",
+        "postcode": 85341,
+        "coordinates": { "latitude": "14.4877", "longitude": "126.4212" },
+        "timezone": {
+          "offset": "+5:00",
+          "description": "Ekaterinburg, Islamabad, Karachi, Tashkent"
+        }
+      },
+      "email": "یاسمن.موسوی@example.com",
+      "login": {
+        "uuid": "0d75967e-08f1-474c-8ec6-5f02ba00e5a7",
+        "username": "ticklishfrog220",
+        "password": "dingo",
+        "salt": "PGGsWIgA",
+        "md5": "d2d20d068a2654a82d49e90935421859",
+        "sha1": "f7ba953b444b17089a5bd1f14ef2575c67e79314",
+        "sha256": "933053290fc45034a78dadeb41bbcfee6cbf8a368c39bf69c38ee2203e235624"
+      },
+      "dob": { "date": "1956-06-22T15:47:27Z", "age": 62 },
+      "registered": { "date": "2009-07-02T10:53:32Z", "age": 9 },
+      "phone": "045-57171972",
+      "cell": "0915-822-1360",
+      "id": { "name": "", "value": null },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/11.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/11.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/11.jpg"
+      },
+      "nat": "IR"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "miss", "first": "liana", "last": "blakstad" },
+      "location": {
+        "street": "holmliaveien 4382",
+        "city": "lampeland",
+        "state": "sogn og fjordane",
+        "postcode": "1067",
+        "coordinates": { "latitude": "-77.7673", "longitude": "-12.7125" },
+        "timezone": {
+          "offset": "-11:00",
+          "description": "Midway Island, Samoa"
+        }
+      },
+      "email": "liana.blakstad@example.com",
+      "login": {
+        "uuid": "7caeb091-5f03-4a48-bedf-52f5c7aa336e",
+        "username": "orangeostrich283",
+        "password": "cassie",
+        "salt": "bjzUvFxw",
+        "md5": "40f1af86bd2caa68975012989b7581ef",
+        "sha1": "ec5eca9b3482c215c8dbd8b77f53b272307f80f2",
+        "sha256": "8006c4e29be39e84e1a98e5395b299ca9efeb732e67b705ca55fe85f9332bb1f"
+      },
+      "dob": { "date": "1953-08-27T15:45:47Z", "age": 65 },
+      "registered": { "date": "2013-04-21T20:42:17Z", "age": 5 },
+      "phone": "29513040",
+      "cell": "46998169",
+      "id": { "name": "FN", "value": "27085302979" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/69.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/69.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/69.jpg"
+      },
+      "nat": "NO"
+    }
+  ],
+  "info": {
+    "seed": "4ac222a07e9817e0",
+    "results": 7,
+    "page": 1,
+    "version": "1.2"
+  }
+}
