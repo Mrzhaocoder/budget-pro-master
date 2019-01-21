@@ -17,7 +17,7 @@ class Header extends Component {
             <LevelWrapper>M</LevelWrapper>
 
             <PersonalWrapper>
-              <NameWrapper>李建峰_800P</NameWrapper>
+              <NameWrapper>李建峰_801P</NameWrapper>
               <DepartmentWrapper>综合管理部</DepartmentWrapper>
             </PersonalWrapper>
           </TopRightWrapper>

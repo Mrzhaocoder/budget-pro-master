@@ -84,7 +84,7 @@ class DepartmentalTable extends Component {
   render() {
     return (
       <Wrapper>
-        <Table columns={columns} dataSource={data} scroll={{ x: 1500, y: 300 }} />
+        <Table columns={columns} dataSource={data} scroll={{ x: 1500, y: 350 }} />
       </Wrapper>
     );
   }
