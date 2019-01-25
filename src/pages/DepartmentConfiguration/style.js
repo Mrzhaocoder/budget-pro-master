@@ -14,3 +14,13 @@ export const Wrapper = styled.div`
     box-shadow: 2px 2px 8px 1px rgba(20, 20, 20, 0.15);
   }
 `;
+export const TopWrapper = styled.div`
+  margin: 16px 0 -15px 40px;
+  font-size: 25px;
+  font-weight: bold;
+`;
+export const CenterWrapper = styled.div`
+  margin: 0 32px;
+  display: flex;
+  flex-wrap: wrap;
+`;

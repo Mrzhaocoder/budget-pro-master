@@ -16,7 +16,7 @@ class ProjectBudget extends Component {
           />
 
           <BudgetWrapper>
-            <Link to={'/pages/ProjectBudget/BudgetExecution/$2019'}>
+            <Link to={'/ProjectBudget/BudgetExecution/$2019'}>
               <TopBudget>
                 <Icon
                   type="folder-open"
@@ -38,7 +38,7 @@ class ProjectBudget extends Component {
             </FooterBudget>
           </BudgetWrapper>
           <BudgetWrapper>
-            <Link to={'/pages/ProjectBudget/BudgetExecution/$2018'}>
+            <Link to={'/ProjectBudget/BudgetExecution/$2018'}>
               <TopBudget>
                 <Icon
                   type="folder-open"
@@ -67,7 +67,7 @@ class ProjectBudget extends Component {
             </FooterBudget>
           </BudgetWrapper>
           <BudgetWrapper>
-            <Link to={'/pages/ProjectBudget/BudgetExecution/$2017'}>
+            <Link to={'/ProjectBudget/BudgetExecution/$2017'}>
               <TopBudget>
                 <Icon
                   type="folder-open"
@@ -96,7 +96,7 @@ class ProjectBudget extends Component {
             </FooterBudget>
           </BudgetWrapper>
           <BudgetWrapper>
-            <Link to={'/pages/ProjectBudget/BudgetExecution/$2016'}>
+            <Link to={'/ProjectBudget/BudgetExecution/$2016'}>
               <TopBudget>
                 <Icon
                   type="folder-open"
@@ -118,7 +118,7 @@ class ProjectBudget extends Component {
             </FooterBudget>
           </BudgetWrapper>
           <BudgetWrapper>
-            <Link to={'/pages/ProjectBudget/BudgetExecution/$2015'}>
+            <Link to={'/ProjectBudget/BudgetExecution/$2015'}>
               <TopBudget>
                 <Icon
                   type="folder-open"

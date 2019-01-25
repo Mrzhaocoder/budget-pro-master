@@ -25,7 +25,7 @@ class DepartmentalBudget extends Component {
       <Wrapper>
         <TopWrapper>
           <div>
-            <Link to={'/pages/ProjectBudget/BudgetExecution/$新ID'}>
+            <Link to={'/ProjectBudget/BudgetExecution/$新ID'}>
               <Icon type="left-circle" />
             </Link>
             {this.state.id} 部门预算执行详情

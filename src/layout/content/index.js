@@ -1,20 +1,18 @@
-import React, { Component, lazy, Suspense } from 'react';
-import { Row, Col } from 'antd';
+import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Wrapper, DivisionWrapper, ContentWrapper } from './style';
+import { Wrapper, DivisionWrapper, ContentWrapper, RouterWrapper } from './style';
 
-import Menu from './menu/index';
-import Loading from '../../pages/Loading';
+import LeftMenu from './left_menu/index';
 // 代码切片
-const ProjectBudget = lazy(() => import('../../pages/ProjectBudget'));
-const BudgetAdjustment = lazy(() => import('../../pages/BudgetAdjustment'));
-const BudgetAnalysis = lazy(() => import('../../pages/BudgetAnalysis'));
-const DepartmentalExpenses = lazy(() => import('../../pages/DepartmentalExpenses'));
+import ProjectBudget from '../../pages/ProjectBudget';
+import BudgetAdjustment from '../../pages/BudgetAdjustment/index';
+import BudgetAnalysis from '../../pages/BudgetAnalysis/index';
+import DepartmentConfiguration from '../../pages/DepartmentConfiguration';
 // 右侧其他路由
-const BudgetExecution = lazy(() => import('../../pages/ProjectBudget/BudgetExecution'));
-const DepartmentalBudget = lazy(() => import('../../pages/ProjectBudget/DepartmentalBudget'));
+import BudgetExecution from '../../pages/ProjectBudget/BudgetExecution/index';
+import DepartmentalBudget from '../../pages/ProjectBudget/DepartmentalBudget/index';
 
-class Content extends Component {
+class Content1 extends Component {
   render() {
     return (
       <div>
@@ -22,24 +20,18 @@ class Content extends Component {
         <Wrapper>
           <ContentWrapper>
             <Router>
-              <Suspense fallback={<Loading />}>
-                <Row>
-                  <Col span={6}>
-                    <Menu />
-                  </Col>
-                  <Col span={18}>
-                    <Switch>
-                      <Route path="/pages/ProjectBudget" exact component={ProjectBudget} />
-                      <Route path="/pages/BudgetAdjustment" exact component={BudgetAdjustment} />
-                      <Route path="/pages/BudgetAnalysis" exact component={BudgetAnalysis} />
-                      <Route path="/pages/DepartmentalExpenses" exact component={DepartmentalExpenses} />
-                      {/*  右侧其他路由 */}
-                      <Route path="/pages/ProjectBudget/BudgetExecution/:id" component={BudgetExecution} />
-                      <Route path="/pages/ProjectBudget/DepartmentalBudget/:id" component={DepartmentalBudget} />
-                    </Switch>
-                  </Col>
-                </Row>
-              </Suspense>
+              <RouterWrapper>
+                <LeftMenu />
+                <Switch>
+                  <Route path="/ProjectBudget" exact component={ProjectBudget} />
+                  <Route path="/BudgetAdjustment" exact component={BudgetAdjustment} />
+                  <Route path="/BudgetAnalysis" exact component={BudgetAnalysis} />
+                  <Route path="/DepartmentConfiguration" exact component={DepartmentConfiguration} />
+                  {/*  右侧其他路由 */}
+                  <Route path="/ProjectBudget/BudgetExecution/:id" exact component={BudgetExecution} />
+                  <Route path="/ProjectBudget/DepartmentalBudget/:id" exact component={DepartmentalBudget} />
+                </Switch>
+              </RouterWrapper>
             </Router>
           </ContentWrapper>
         </Wrapper>
@@ -48,4 +40,4 @@ class Content extends Component {
   }
 }
 
-export default Content;
+export default Content1;

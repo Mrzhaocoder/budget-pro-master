@@ -4,7 +4,6 @@ export const Wrapper0 = styled.div``;
 
 export const Wrapper = styled.div`
   margin: 16px 0;
-  width: 100%;
+  width: 1216px;
   height: 100%;
-  display: inline-block;
 `;

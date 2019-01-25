@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './layout/header';
 import Footer from './layout/footer';
 import Content from './layout/content';
+// import Content from './layout/content';
 
 class LayOut extends Component {
   render() {
@@ -12,6 +13,7 @@ class LayOut extends Component {
         }}
       >
         <Header />
+        {/*  <Content /> */}
         <Content />
         <Footer />
       </div>

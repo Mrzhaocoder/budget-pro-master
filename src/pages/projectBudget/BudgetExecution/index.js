@@ -17,7 +17,7 @@ class BudgetExecution extends Component {
       <Wrapper>
         <TopWrapper>
           <div>
-            <Link to={'/pages/ProjectBudget/'}>
+            <Link to={'/ProjectBudget/'}>
               <Icon type="left-circle" />
             </Link>
             {this.state.id}年度预算执行
@@ -60,7 +60,7 @@ class BudgetExecution extends Component {
               <div>项目收入</div>
               <div className="green">¥ 6653.46</div>
             </CenterWrapperLeft>
-            <Link to={'/pages/ProjectBudget/DepartmentalBudget/$AAAA'}>
+            <Link to={'/ProjectBudget/DepartmentalBudget/$AAAA'}>
               <Icon type="right" style={{ fontSize: '30px' }} />
             </Link>
           </BudgetWrapper>
