@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Divider, Icon, Switch, Select, Button } from 'antd';
 import { Link } from 'react-router-dom';
 import { Wrapper, TopWrapper, CenterWrapper, BudgetWrapper, TopDepartmentalWrapper, TopCenterWrapper } from './style';
-import DepartmentalTable from './DepartmentalTable';
+import DepartmentalTable from './departmental_table';
 
 const OPTIONS = ['Apples', 'Nails', 'Bananas', 'Helicopters'];
 

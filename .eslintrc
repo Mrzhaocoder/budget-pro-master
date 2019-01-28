@@ -21,6 +21,12 @@
     }
   },
   "rules": {
+    "no-unused-vars": [2, { 
+      "vars": "local",
+      "args": "none" 
+    }], 
+    "no-underscore-dangle": 0,//标识符不能以_开头或结尾
+
     "react/prefer-stateless-function": 0,
     "no-console": 0,
     "react/no-multi-comp": 0,

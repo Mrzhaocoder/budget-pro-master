@@ -1,10 +1,6 @@
-import { combineReducers } from "redux";
-//import  headerReducer from "../layout/header/store/reducer";
-
-
+import { combineReducers } from 'redux';
+import projectBudget from '../pages/project_budget/store/reducer';
 
 export default combineReducers({
-  //header: headerReducer,
-
-
+  projectBudget,
 });

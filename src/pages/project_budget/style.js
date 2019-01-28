@@ -43,6 +43,21 @@ export const TopBudget = styled.div`
     -moz-box-shadow: 2px 2px 8px 1px rgba(20, 20, 20, 0.15);
     box-shadow: 2px 2px 8px 1px rgba(20, 20, 20, 0.15);
   }
+  .one {
+    color: #85a5ff;
+  }
+  .two {
+    color: #ff85c0;
+  }
+  .three {
+    color: #5cdbd3;
+  }
+  .four {
+    color: #fff566;
+  }
+  .five {
+    color: #d3f261;
+  }
 `;
 export const FooterBudget = styled.div`
   height: 60px;

@@ -22,7 +22,7 @@ class LeftMenu extends Component {
           <Button type="primary" onClick={this.toggleCollapsed} style={{ margin: 16, float: 'left' }}>
             <Icon type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'} />
           </Button>
-          <Menu defaultSelectedKeys={['1']} defaultOpenKeys={['sub1']} mode="inline" theme="light" inlineCollapsed={this.state.collapsed}>
+          <Menu defaultSelectedKeys={['1']} defaultOpenKeys={['sub3']} mode="inline" theme="light" inlineCollapsed={this.state.collapsed}>
             <Menu.Item key="1">
               <Link to="/ProjectBudget" style={{ height: '100%', width: '100%' }}>
                 <Icon type="pie-chart" />
@@ -81,7 +81,11 @@ class LeftMenu extends Component {
                 </span>
               }
             >
-              <Menu.Item key="13">支出预算项配置</Menu.Item>
+              <Menu.Item key="13">
+                <Link to="/ExpenditureBudgetConfiguration" style={{ height: '100%', width: '100%' }}>
+                  支出预算项配置
+                </Link>
+              </Menu.Item>
               <Menu.Item key="14">
                 <Link to="/DepartmentConfiguration" style={{ height: '100%', width: '100%' }}>
                   部门配置维护

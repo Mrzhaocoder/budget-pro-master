@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Divider, Icon, Switch, Progress } from 'antd';
 import { Link } from 'react-router-dom';
 import { Wrapper, TopWrapper, CenterWrapper, BudgetWrapper, CenterWrapperLeft, ProjectBudget } from './style';
-import BudgetExecutionTable from './BudgetExecutionTable/index';
+import BudgetExecutionTable from './budgetExecution_table/index';
 
 class BudgetExecution extends Component {
   constructor(props) {
