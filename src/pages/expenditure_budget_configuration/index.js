@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Divider, Button, Table } from 'antd';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import * as actionCreators from './store/actionCreators';
 
 import { Wrapper, TopWrapper, CenterWrapper, TableWrapper } from './style';
 
@@ -33,7 +35,9 @@ class ExpenditureBudgetConfiguration extends Component {
     selectedRowKeys: [], // Check here to configure the default column
     loading: false,
   };
-
+  componentDidMount() {
+    this.props.getExpenditureConfigurationData();
+  }
   onSelectChange = (selectedRowKeys) => {
     console.log('selectedRowKeys changed: ', selectedRowKeys);
     this.setState({ selectedRowKeys });
@@ -64,6 +68,7 @@ class ExpenditureBudgetConfiguration extends Component {
             <Button type="primary">新增</Button>
           </Link>
         </TopWrapper>
+
         <CenterWrapper>
           <Divider
             style={{
@@ -85,4 +90,16 @@ class ExpenditureBudgetConfiguration extends Component {
   }
 }
 
-export default ExpenditureBudgetConfiguration;
+const mapStateToProps = (state, ownProps) => ({
+  data: state.ExpenditureBudgetConfiguration.data,
+});
+const mapDispatchToProps = (dispatch, ownProps) => ({
+  getExpenditureConfigurationData: () => {
+    dispatch(actionCreators.getExpenditureConfigurationData());
+  },
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(ExpenditureBudgetConfiguration);

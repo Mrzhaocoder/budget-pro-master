@@ -43,6 +43,17 @@ class ExpenditureNewConfiguration extends Component {
             <TableBelow>
               <BelowLeft>
                 <DivWrapper>
+                  <InputWrapper>生效标志：</InputWrapper>
+                  <Select defaultValue="激活" style={{ width: '70%' }} onChange={handleChange}>
+                    <Option value="jack">Jack</Option>
+                    <Option value="lucy">Lucy</Option>
+                    <Option value="disabled" disabled>
+                      Disabled
+                    </Option>
+                    <Option value="Yiminghe">yiminghe</Option>
+                  </Select>
+                </DivWrapper>
+                <DivWrapper>
                   <InputWrapper>年度：</InputWrapper>
                   <Select defaultValue="2019" style={{ width: '70%' }} onChange={handleChange}>
                     <Option value="jack">Jack</Option>
@@ -67,18 +78,6 @@ class ExpenditureNewConfiguration extends Component {
                 <DivWrapper>
                   <InputWrapper>支出项目：</InputWrapper>
                   <Select defaultValue="职工薪酬" style={{ width: '70%' }} onChange={handleChange}>
-                    <Option value="jack">Jack</Option>
-                    <Option value="lucy">Lucy</Option>
-                    <Option value="disabled" disabled>
-                      Disabled
-                    </Option>
-                    <Option value="Yiminghe">yiminghe</Option>
-                  </Select>
-                </DivWrapper>
-
-                <DivWrapper>
-                  <InputWrapper>生效标志：</InputWrapper>
-                  <Select defaultValue="激活" style={{ width: '70%' }} onChange={handleChange}>
                     <Option value="jack">Jack</Option>
                     <Option value="lucy">Lucy</Option>
                     <Option value="disabled" disabled>

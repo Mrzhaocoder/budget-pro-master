@@ -49,6 +49,7 @@ export const TableBelow = styled.div`
 `;
 export const BelowLeft = styled.div`
   width: 50%;
+  margin: 0 8px;
   display: flex;
   justify-content: center;
   align-items: center;
