@@ -24,20 +24,20 @@ class LeftMenu extends Component {
           </Button>
           <Menu defaultSelectedKeys={['1']} defaultOpenKeys={['sub3']} mode="inline" theme="light" inlineCollapsed={this.state.collapsed}>
             <Menu.Item key="1">
-              <Link to="/ProjectBudget" style={{ height: '100%', width: '100%' }}>
+              <Link to="/Project" style={{ height: '100%', width: '100%' }}>
                 <Icon type="pie-chart" />
                 <span>项目预算</span>
               </Link>
             </Menu.Item>
 
             <Menu.Item key="2">
-              <Link to="/BudgetAdjustment" style={{ height: '100%', width: '100%' }}>
+              <Link to="/adjustment" style={{ height: '100%', width: '100%' }}>
                 <Icon type="desktop" />
                 <span>预算调整</span>
               </Link>
             </Menu.Item>
             <Menu.Item key="3">
-              <Link to="/BudgetAnalysis" style={{ height: '100%', width: '100%' }}>
+              <Link to="/analysis" style={{ height: '100%', width: '100%' }}>
                 <Icon type="inbox" />
                 <span>预算分析</span>
               </Link>
@@ -65,7 +65,7 @@ class LeftMenu extends Component {
                 </span>
               }
             >
-              <Menu.Item key="9">Option 9</Menu.Item>
+              <Menu.Item key="9">department</Menu.Item>
               <Menu.Item key="10">Option 10</Menu.Item>
               <SubMenu key="sub3" title="Submenu">
                 <Menu.Item key="11">Option 11</Menu.Item>
@@ -82,12 +82,12 @@ class LeftMenu extends Component {
               }
             >
               <Menu.Item key="13">
-                <Link to="/ExpenditureBudgetConfiguration" style={{ height: '100%', width: '100%' }}>
+                <Link to="/ConfigurationExpenditure" style={{ height: '100%', width: '100%' }}>
                   支出预算项配置
                 </Link>
               </Menu.Item>
               <Menu.Item key="14">
-                <Link to="/DepartmentConfiguration" style={{ height: '100%', width: '100%' }}>
+                <Link to="/ConfigurationDepartment" style={{ height: '100%', width: '100%' }}>
                   部门配置维护
                 </Link>
               </Menu.Item>

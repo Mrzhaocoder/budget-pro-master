@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Wrapper, TopWrapper, CenterWrapper, BudgetWrapper, CenterWrapperLeft, ProjectBudget } from './style';
 import BudgetExecutionTable from './budgetExecution_table/index';
 
-class BudgetExecution extends Component {
+class ProjectExecution extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -17,7 +17,7 @@ class BudgetExecution extends Component {
       <Wrapper>
         <TopWrapper>
           <div>
-            <Link to={'/ProjectBudget/'}>
+            <Link to={'/Project/'}>
               <Icon type="left-circle" />
             </Link>
             {this.state.id}年度预算执行
@@ -60,7 +60,7 @@ class BudgetExecution extends Component {
               <div>项目收入</div>
               <div className="green">¥ 6653.46</div>
             </CenterWrapperLeft>
-            <Link to={'/ProjectBudget/DepartmentalBudget/$AAAA'}>
+            <Link to={'/project/ProjectExecutionDetails/$AAAA'}>
               <Icon type="right" style={{ fontSize: '30px' }} />
             </Link>
           </BudgetWrapper>
@@ -71,4 +71,4 @@ class BudgetExecution extends Component {
   }
 }
 
-export default BudgetExecution;
+export default ProjectExecution;

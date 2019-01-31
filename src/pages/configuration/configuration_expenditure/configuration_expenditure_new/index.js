@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Divider, TreeSelect, Button, Select, Input } from 'antd';
+import { connect } from 'react-redux';
+import * as actionCreators from '../store/actionCreators';
 import { Wrapper, TopWrapper, CenterWrapper, TableWrapper, TableBelow, BelowLeft, InputWrapper, DivWrapper } from './style';
 
 const TreeNode = TreeSelect.TreeNode;
@@ -9,10 +11,14 @@ const { TextArea } = Input;
 function handleChange(value) {
   console.log(`selected ${value}`);
 }
-class ExpenditureNewConfiguration extends Component {
+class ConfigurationExpenditureNew extends Component {
   state = {
     value: undefined,
   };
+  componentDidMount() {
+    this.props.getConfigurationExpenditureNew();
+    console.log('NewData', this.props.NewData);
+  }
 
   onChange = (value) => {
     console.log(value);
@@ -47,10 +53,6 @@ class ExpenditureNewConfiguration extends Component {
                   <Select defaultValue="激活" style={{ width: '70%' }} onChange={handleChange}>
                     <Option value="jack">Jack</Option>
                     <Option value="lucy">Lucy</Option>
-                    <Option value="disabled" disabled>
-                      Disabled
-                    </Option>
-                    <Option value="Yiminghe">yiminghe</Option>
                   </Select>
                 </DivWrapper>
                 <DivWrapper>
@@ -124,5 +126,16 @@ class ExpenditureNewConfiguration extends Component {
     );
   }
 }
+const mapStateToProps = (state, ownProps) => ({
+  NewData: state.ExpenditureBudgetConfiguration.NewData,
+});
+const mapDispatchToProps = (dispatch, ownProps) => ({
+  getConfigurationExpenditureNew: () => {
+    dispatch(actionCreators.getConfigurationExpenditureNew());
+  },
+});
 
-export default ExpenditureNewConfiguration;
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(ConfigurationExpenditureNew);

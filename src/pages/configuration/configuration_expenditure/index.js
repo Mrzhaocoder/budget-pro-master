@@ -1,42 +1,48 @@
 import React, { Component } from 'react';
 import { Divider, Button, Table } from 'antd';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import * as actionCreators from './store/actionCreators';
 
 import { Wrapper, TopWrapper, CenterWrapper, TableWrapper } from './style';
 
 const columns = [
   {
-    title: 'Name',
-    dataIndex: 'name',
+    title: '年度',
+    dataIndex: 'year',
   },
   {
-    title: 'Age',
-    dataIndex: 'age',
+    title: '支出大类',
+    dataIndex: 'expenditure_category',
   },
   {
-    title: 'Address',
-    dataIndex: 'address',
+    title: '支出项目',
+    dataIndex: 'expenditure_item',
+  },
+  {
+    title: '填报部门',
+    dataIndex: 'filling_dept',
+  },
+  {
+    title: '生效标志',
+    dataIndex: 'is_active',
   },
 ];
 
 const data = [];
-for (let i = 0; i < 46; i += 1) {
-  data.push({
-    key: i,
-    name: `Edward King ${i}`,
-    age: 32,
-    address: `London, Park Lane no. ${i}`,
-  });
-}
-class DepartmentConfiguration extends Component {
+
+class ConfigurationExpenditure extends Component {
   state = {
     selectedRowKeys: [], // Check here to configure the default column
     loading: false,
   };
-
+  componentDidMount() {
+    this.props.getExpenditureConfigurationData();
+  }
   onSelectChange = (selectedRowKeys) => {
     console.log('selectedRowKeys changed: ', selectedRowKeys);
     this.setState({ selectedRowKeys });
+    console.log('001', this.props.data.list);
   };
   start = () => {
     this.setState({ loading: true });
@@ -50,6 +56,20 @@ class DepartmentConfiguration extends Component {
   };
 
   render() {
+    if (this.props.data) {
+      this.props.data.list.map((item, index) => {
+        data.push({
+          key: item.id,
+          year: item.year,
+          expenditure_category: item.expenditure_category,
+          expenditure_items: item.expenditure_items,
+          filling_dept: item.filling_dept,
+          is_active: item.is_active,
+        });
+        return this.props.data.list.key;
+      });
+    }
+
     const { loading, selectedRowKeys } = this.state;
     const rowSelection = {
       selectedRowKeys,
@@ -59,11 +79,12 @@ class DepartmentConfiguration extends Component {
     return (
       <Wrapper>
         <TopWrapper>
-          部门配置
-          <Link to={'/DepartmentConfiguration/DepartmentNewConfiguration'}>
+          支出预算项配置
+          <Link to={'/ConfigurationExpenditure/ConfigurationExpenditureNew'}>
             <Button type="primary">新增</Button>
           </Link>
         </TopWrapper>
+
         <CenterWrapper>
           <Divider
             style={{
@@ -85,4 +106,16 @@ class DepartmentConfiguration extends Component {
   }
 }
 
-export default DepartmentConfiguration;
+const mapStateToProps = (state, ownProps) => ({
+  data: state.ExpenditureBudgetConfiguration.data,
+});
+const mapDispatchToProps = (dispatch, ownProps) => ({
+  getExpenditureConfigurationData: () => {
+    dispatch(actionCreators.getExpenditureConfigurationData());
+  },
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(ConfigurationExpenditure);

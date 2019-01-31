@@ -1,6 +1,6 @@
 import { all, fork } from 'redux-saga/effects';
-import * as getProjectBudgetSagas from '../pages/project_budget/store/saga';
-import * as ExpenditureBudgetConfigurationSagas from '../pages/expenditure_budget_configuration/store/saga';
+import * as getProjectBudgetSagas from '../pages/project/store/saga';
+import * as ExpenditureBudgetConfigurationSagas from '../pages/configuration/configuration_expenditure/store/saga';
 
 export default function* mySaga() {
   yield all([...Object.values(getProjectBudgetSagas)].map(fork));

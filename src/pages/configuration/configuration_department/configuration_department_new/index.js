@@ -4,7 +4,7 @@ import { Wrapper, TopWrapper, CenterWrapper, TableWrapper, TableBelow, InputWrap
 
 const TreeNode = TreeSelect.TreeNode;
 
-class NewConfiguration extends Component {
+class ConfigurationDepartmentNew extends Component {
   state = {
     value: undefined,
   };
@@ -73,4 +73,4 @@ class NewConfiguration extends Component {
   }
 }
 
-export default NewConfiguration;
+export default ConfigurationDepartmentNew;

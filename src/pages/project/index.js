@@ -5,9 +5,10 @@ import { connect } from 'react-redux';
 import * as actionCreators from './store/actionCreators';
 import { Wrapper, TopWrapper, CenterWrapper, BudgetWrapper, TopBudget, FooterBudget, WordBudget, NumberBudget, NumberBudgetRight } from './style';
 
-class ProjectBudget extends Component {
+class Project extends Component {
   componentDidMount() {
     this.props.getProjectBudgetData();
+    console.log('001', this.props.data.list);
   }
 
   render() {
@@ -15,7 +16,7 @@ class ProjectBudget extends Component {
       this.props.data &&
       this.props.data.list.map((item, index) => (
         <BudgetWrapper key={index}>
-          <Link to={`/ProjectBudget/BudgetExecution/${item.year}`}>
+          <Link to={`/project/ProjectExecution/${item.year}`}>
             <TopBudget>
               <Icon
                 type="folder-open"
@@ -65,4 +66,4 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(ProjectBudget);
+)(Project);

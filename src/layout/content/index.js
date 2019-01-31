@@ -4,17 +4,17 @@ import { Wrapper, DivisionWrapper, ContentWrapper, RouterWrapper } from './style
 
 import LeftMenu from './left_menu';
 // 第一层
-import ProjectBudget from '../../pages/project_budget';
-import BudgetAdjustment from '../../pages/budget_adjustment';
-import BudgetAnalysis from '../../pages/budget_analysis';
-import DepartmentConfiguration from '../../pages/department_configuration';
-import ExpenditureBudgetConfiguration from '../../pages/expenditure_budget_configuration/';
+import Project from '../../pages/project';
+import Adjustment from '../../pages/adjustment';
+import Analysis from '../../pages/analysis';
+import ConfigurationDepartment from '../../pages/configuration/configuration_department';
+import ConfigurationExpenditure from '../../pages/configuration/configuration_expenditure';
 
 // 第二层
-import BudgetExecution from '../../pages/project_budget/budget_execution/index';
-import DepartmentalBudget from '../../pages/project_budget/departmental_budget/index';
-import DepartmentNewConfiguration from '../../pages/department_configuration/department_new_configuration';
-import ExpenditureNewConfiguration from '../../pages/expenditure_budget_configuration/expenditure_new_configuration';
+import ProjectExecution from '../../pages/project/project_execution';
+import ProjectExecutionDetails from '../../pages/project/project_execution_details';
+import ConfigurationDepartmentNew from '../../pages/configuration/configuration_department/configuration_department_new';
+import ConfigurationExpenditureNew from '../../pages/configuration/configuration_expenditure/configuration_expenditure_new';
 
 class Content1 extends Component {
   render() {
@@ -27,17 +27,17 @@ class Content1 extends Component {
               <RouterWrapper>
                 <LeftMenu />
                 <Switch>
-                  <Route path="/ProjectBudget" exact component={ProjectBudget} />
-                  <Route path="/BudgetAdjustment" exact component={BudgetAdjustment} />
-                  <Route path="/BudgetAnalysis" exact component={BudgetAnalysis} />
-                  <Route path="/DepartmentConfiguration" exact component={DepartmentConfiguration} />
-                  <Route path="/ExpenditureBudgetConfiguration" exact component={ExpenditureBudgetConfiguration} />
+                  <Route path="/project" exact component={Project} />
+                  <Route path="/adjustment" exact component={Adjustment} />
+                  <Route path="/analysis" exact component={Analysis} />
+                  <Route path="/ConfigurationDepartment" exact component={ConfigurationDepartment} />
+                  <Route path="/ConfigurationExpenditure" exact component={ConfigurationExpenditure} />
 
                   {/*  右侧其他路由 */}
-                  <Route path="/ProjectBudget/BudgetExecution/:id" exact component={BudgetExecution} />
-                  <Route path="/ProjectBudget/DepartmentalBudget/:id" exact component={DepartmentalBudget} />
-                  <Route path="/DepartmentConfiguration/DepartmentNewConfiguration" exact component={DepartmentNewConfiguration} />
-                  <Route path="/ExpenditureBudgetConfiguration/ExpenditureNewConfiguration" exact component={ExpenditureNewConfiguration} />
+                  <Route path="/project/ProjectExecution/:id" exact component={ProjectExecution} />
+                  <Route path="/project/ProjectExecutionDetails/:id" exact component={ProjectExecutionDetails} />
+                  <Route path="/ConfigurationDepartment/ConfigurationDepartmentNew" exact component={ConfigurationDepartmentNew} />
+                  <Route path="/ConfigurationExpenditure/ConfigurationExpenditureNew" exact component={ConfigurationExpenditureNew} />
                 </Switch>
               </RouterWrapper>
             </Router>

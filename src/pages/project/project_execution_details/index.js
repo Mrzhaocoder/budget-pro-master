@@ -6,7 +6,7 @@ import DepartmentalTable from './departmental_table';
 
 const OPTIONS = ['Apples', 'Nails', 'Bananas', 'Helicopters'];
 
-class DepartmentalBudget extends Component {
+class ProjectExecutionDetails extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -25,7 +25,7 @@ class DepartmentalBudget extends Component {
       <Wrapper>
         <TopWrapper>
           <div>
-            <Link to={'/ProjectBudget/BudgetExecution/$新ID'}>
+            <Link to={'/Project/ProjectExecution/$新ID'}>
               <Icon type="left-circle" />
             </Link>
             {this.state.id} 部门预算执行详情
@@ -90,4 +90,4 @@ class DepartmentalBudget extends Component {
   }
 }
 
-export default DepartmentalBudget;
+export default ProjectExecutionDetails;
