@@ -42,7 +42,7 @@ class ConfigurationExpenditure extends Component {
   onSelectChange = (selectedRowKeys) => {
     console.log('selectedRowKeys changed: ', selectedRowKeys);
     this.setState({ selectedRowKeys });
-    console.log('001', this.props.data.list);
+    console.log('onSelectChange', this.props.data.list);
   };
   start = () => {
     this.setState({ loading: true });

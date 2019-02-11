@@ -20,7 +20,7 @@ function* getExpenditureConfigurationData(action) {
 }
 function* getConfigurationExpenditureNew(action) {
   try {
-    const res = yield axios.get('/api/test1.json', {
+    const res = yield axios.get('/api/test2.json', {
       // const res = yield axios.get('http://10.2.14.179:8080/dict/findAll', {
       data: {
         token: window.localStorage.getItem('token'),

@@ -1,0 +1,24 @@
+{
+  "code": 200,
+  "data": {
+    "message": "success",
+    "list": [
+      {
+        "id": 1,
+        "year": "1",
+        "expenditure_category": "one",
+        "expenditure_item": "12549",
+        "filling_dept": "58964",
+        "is_active": "58964"
+      },
+      {
+        "id": 2,
+        "year": "2",
+        "expenditure_category": "one",
+        "expenditure_item": "12549",
+        "filling_dept": "58964",
+        "is_active": "58964"
+      }
+    ]
+  }
+}

@@ -7,25 +7,32 @@ import { Wrapper, TopWrapper, CenterWrapper, TableWrapper, TableBelow, BelowLeft
 const TreeNode = TreeSelect.TreeNode;
 const Option = Select.Option;
 const { TextArea } = Input;
+const newData = [];
 
-function handleChange(value) {
-  console.log(`selected ${value}`);
-}
 class ConfigurationExpenditureNew extends Component {
   state = {
     value: undefined,
   };
+
   componentDidMount() {
     this.props.getConfigurationExpenditureNew();
-    console.log('NewData', this.props.NewData);
   }
-
   onChange = (value) => {
+    console.log('NewData', this.props.NewData);
     console.log(value);
     this.setState({ value });
   };
+  handleChange = (value) => {
+    console.log(`selected ${value}`);
+  };
 
   render() {
+    if (this.props.NewData) {
+      newData.push({
+        is_active: '激活',
+      });
+    }
+
     return (
       <Wrapper>
         <TopWrapper>
@@ -50,14 +57,14 @@ class ConfigurationExpenditureNew extends Component {
               <BelowLeft>
                 <DivWrapper>
                   <InputWrapper>生效标志：</InputWrapper>
-                  <Select defaultValue="激活" style={{ width: '70%' }} onChange={handleChange}>
+                  <Select defaultValue="激活" style={{ width: '70%' }} onChange={this.handleChange}>
                     <Option value="jack">Jack</Option>
                     <Option value="lucy">Lucy</Option>
                   </Select>
                 </DivWrapper>
                 <DivWrapper>
                   <InputWrapper>年度：</InputWrapper>
-                  <Select defaultValue="2019" style={{ width: '70%' }} onChange={handleChange}>
+                  <Select defaultValue="2019" style={{ width: '70%' }} onChange={this.handleChange}>
                     <Option value="jack">Jack</Option>
                     <Option value="lucy">Lucy</Option>
                     <Option value="disabled" disabled>
@@ -68,7 +75,7 @@ class ConfigurationExpenditureNew extends Component {
                 </DivWrapper>
                 <DivWrapper>
                   <InputWrapper>支出大类：</InputWrapper>
-                  <Select defaultValue="联盟人力" style={{ width: '70%' }} onChange={handleChange}>
+                  <Select defaultValue="联盟人力" style={{ width: '70%' }} onChange={this.handleChange}>
                     <Option value="jack">Jack</Option>
                     <Option value="lucy">Lucy</Option>
                     <Option value="disabled" disabled>
@@ -79,7 +86,7 @@ class ConfigurationExpenditureNew extends Component {
                 </DivWrapper>
                 <DivWrapper>
                   <InputWrapper>支出项目：</InputWrapper>
-                  <Select defaultValue="职工薪酬" style={{ width: '70%' }} onChange={handleChange}>
+                  <Select defaultValue="职工薪酬" style={{ width: '70%' }} onChange={this.handleChange}>
                     <Option value="jack">Jack</Option>
                     <Option value="lucy">Lucy</Option>
                     <Option value="disabled" disabled>
